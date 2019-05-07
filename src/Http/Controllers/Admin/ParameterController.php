@@ -12,7 +12,7 @@ class ParameterController extends ContentManagerController
     {
         $this->sPath            = 'clara-parameter::admin.parameter';
         $this->sPathRedirect    = 'admin/parameter';
-        $this->sName            = __('parameter.parameter');
+        $this->sName            = __('clara-parameter::parameter.parameter');
         
         $this->oRepository  = $oRepository;
         $this->sRequest     = 'CeddyG\ClaraParameter\Http\Requests\ParameterRequest';
