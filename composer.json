@@ -1,0 +1,34 @@
+{
+    "name": "ceddyg/clara-parameter",
+    "description": "Repository to create parameter from the database.",
+    "keywords": ["laravel", "clara", "parameter"],
+    "authors": [
+        {
+            "name": "CeddyG"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.1",
+        "ceddyg/query-builder-repository": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CeddyG\\ClaraParameter\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CeddyG\\ClaraParameter\\ParameterServiceProvider"
+            ],
+            "aliases": {
+                "ClaraParameter": "CeddyG\\ClaraParameter\\Facades\\ClaraParameter"
+            }
+        }
+    }
+}
