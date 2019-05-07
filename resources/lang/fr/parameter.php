@@ -13,7 +13,7 @@ return [
     */
     'parameter'         => 'Paramètre',
     'name_parameter'    => 'Nom',
-    'slug_parameter'    => 'Nom simplifié',
+    'slug_parameter'    => 'Code',
     'value_parameter'   => 'Valeur',
     'created_at'        => 'Created at',
     'updated_at'        => 'Updated at'

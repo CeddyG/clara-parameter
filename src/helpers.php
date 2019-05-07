@@ -1,6 +1,6 @@
 <?php
 
-use ClaraParameter;
+use CeddyG\ClaraParameter\Facades\ClaraParameter;
 
 function param($sSlug, $sDefault = '')
 {

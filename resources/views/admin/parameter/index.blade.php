@@ -26,9 +26,9 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>{{ __('parameter.name_parameter') }}</th>
-                        <th>{{ __('parameter.slug_parameter') }}</th>
-                        <th>{{ __('parameter.value_parameter') }}</th>
+                        <th>{{ __('clara-parameter::parameter.name_parameter') }}</th>
+                        <th>{{ __('clara-parameter::parameter.slug_parameter') }}</th>
+                        <th>{{ __('clara-parameter::parameter.value_parameter') }}</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -55,7 +55,7 @@
             $('#tab-admin').DataTable({
                 serverSide: true,
                 ajax: {
-                    'url': '{{ route('admin.parameter.index.ajax') }}'
+                    'url': '{{ route('api.admin.parameter.index') }}'
                 },
                 columns: [
                     { 'data': 'id_parameter' },

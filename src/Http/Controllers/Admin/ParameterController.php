@@ -10,7 +10,7 @@ class ParameterController extends ContentManagerController
 {
     public function __construct(ParameterRepository $oRepository)
     {
-        $this->sPath            = 'admin/parameter';
+        $this->sPath            = 'clara-parameter::admin.parameter';
         $this->sPathRedirect    = 'admin/parameter';
         $this->sName            = __('parameter.parameter');
         

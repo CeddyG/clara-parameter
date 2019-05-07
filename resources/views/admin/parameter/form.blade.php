@@ -14,15 +14,15 @@
                 </div>
                 <div class="box-body"> 
                     @if(isset($oItem))
-                        {!! BootForm::open()->action( route('admin.parameter.update', $oItem->id_parameter) )->put() !!}
+                        {!! BootForm::open()->action(route('admin.parameter.update', $oItem->id_parameter))->put() !!}
                         {!! BootForm::bind($oItem) !!}
                     @else
-                        {!! BootForm::open()->action( route('admin.parameter.store') )->post() !!}
+                        {!! BootForm::open()->action(route('admin.parameter.store'))->post() !!}
                     @endif
 
-                        {!! BootForm::text(__('parameter.name_parameter'), 'name_parameter') !!}
-                        {!! BootForm::text(__('parameter.slug_parameter'), 'slug_parameter') !!}
-                        {!! BootForm::text(__('parameter.value_parameter'), 'value_parameter') !!}
+                        {!! BootForm::text(__('clara-parameter::parameter.name_parameter'), 'name_parameter') !!}
+                        {!! BootForm::text(__('clara-parameter::parameter.slug_parameter'), 'slug_parameter') !!}
+                        {!! BootForm::text(__('clara-parameter::parameter.value_parameter'), 'value_parameter') !!}
 
                     {!! BootForm::submit('Envoyer', 'btn-primary')->addClass('pull-right') !!}
 
