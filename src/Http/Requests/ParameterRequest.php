@@ -61,6 +61,9 @@ class ParameterRequest extends FormRequest
                     'updated_at'        => 'string'
                 ];
             }
+            
+            default: 
+                return [];
         }
     }
 }
