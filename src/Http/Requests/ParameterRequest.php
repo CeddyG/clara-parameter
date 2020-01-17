@@ -4,6 +4,8 @@ namespace CeddyG\ClaraParameter\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+use Str;
+
 class ParameterRequest extends FormRequest
 {
     /**
@@ -22,7 +24,7 @@ class ParameterRequest extends FormRequest
         
         if (isset($aAttribute['slug_parameter']))
         {
-            $aAttribute['slug_parameter'] = str_slug($aAttribute['slug_parameter']);
+            $aAttribute['slug_parameter'] = Str::slug($aAttribute['slug_parameter']);
         }
         
         return $aAttribute;
