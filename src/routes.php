@@ -10,8 +10,8 @@ function()
 });
 
 Route::group([
-    'prefix' => config('clara.parameter.route.api-admin.prefix'), 
-    'middleware' => config('clara.parameter.route.api-admin.middleware')
+    'prefix' => config('clara.parameter.route.api.prefix'), 
+    'middleware' => config('clara.parameter.route.api.middleware')
 ], 
 function()
 {

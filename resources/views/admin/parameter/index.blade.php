@@ -55,13 +55,16 @@
             $('#tab-admin').DataTable({
                 serverSide: true,
                 ajax: {
-                    'url': '{{ route('api.admin.parameter.index') }}'
+                    'url': '{{ route('api.admin.parameter.index') }}',
+                    headers: {
+                        "Authorization": "Bearer {{ Sentinel::getUser()->api_token }}"
+                    }
                 },
                 columns: [
                     { 'data': 'id_parameter' },
                     { 'data': 'name_parameter' },
-					{ 'data': 'slug_parameter' },
-					{ 'data': 'value_parameter' },
+                    { 'data': 'slug_parameter' },
+                    { 'data': 'value_parameter' },
                     {
                         "data": "id_parameter",
                         "render": function ( data, type, row, meta ) {
